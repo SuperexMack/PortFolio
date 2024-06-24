@@ -1,0 +1,36 @@
+
+.main-body{
+    height: 80vh;
+    width: 100%;
+    background-color: black
+}
+
+.titleBox{
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: 900;
+    color: white;
+}
+
+
+.contentfirst {
+    width: 500px;
+}
+.innerText{
+    font-size: 20px;
+}
+
+.ExploreButton{
+    background-color: rgb(18, 173, 204);
+    padding: 5px;
+    border-radius: 15px;
+    width: 100px;
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.ExploreButton:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
