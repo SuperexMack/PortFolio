@@ -2,7 +2,12 @@ import "./Improve.css"
 function MainBg(){
     return(
         <>
-            
+            <div className="effectCircle">
+
+            </div>
+            <div className="effectCircle2">
+
+            </div>
         <div className="main-body flex flex-row justify-around">
         <div className="h-96 w-96 contentfirst  relative top-24 flex flex-col p-20">
          

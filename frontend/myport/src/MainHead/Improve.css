@@ -2,7 +2,7 @@
 .main-body{
     height: 80vh;
     width: 100%;
-    background-color: black
+    background-color: black;
 }
 
 .titleBox{
@@ -10,6 +10,8 @@
     padding: 10px;
     font-weight: 900;
     color: white;
+    box-shadow: 0px 0px 20px greenyellow;
+    animation: first_box 3s ease-in-out infinite alternate;
     transition: transform 0.3s ease;
 }
 
@@ -24,6 +26,7 @@
 
 .contentfirst {
     width: 500px;
+    z-index: 10;
 }
 .innerText{
     font-size: 20px;
@@ -45,3 +48,103 @@
 }
 
 
+.effectCircle{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background-color: rgb(42, 165, 155);
+    position: absolute;
+    left: 10px;
+    top: 200px;
+    box-shadow: 0px 0px 40px  brown;
+    animation: first_circle 3s ease-in-out infinite alternate;
+    border: 0px;
+    
+    
+}
+
+@keyframes first_circle{
+    0%{
+        box-shadow: 0px 0px 40px brown;
+    }
+    25% {
+        box-shadow: 0px 0px 50px rgb(57, 212, 26);
+    }
+    75% {
+    box-shadow: 0px 0px 60px rgb(167, 220, 21);
+    }
+    100% {
+        box-shadow: 0px 0px 70px rgb(136, 23, 206);
+    }
+
+    from{
+        position: absolute;
+        left: 10px;
+        top: 200px;
+    }
+    to {
+        position: absolute;
+        left: 20px;
+        top: 220px;
+    }
+}
+
+@keyframes first_box {
+    0% {
+        box-shadow: 0px 0px 20px brown;
+    }
+
+    25% {
+        box-shadow: 0px 0px 20px rgb(57, 212, 26);
+    }
+
+    75% {
+        box-shadow: 0px 0px 20px rgb(26, 150, 212);
+    }
+
+    100% {
+        box-shadow: 0px 0px 20px rgb(136, 23, 206);
+    }
+}
+/* .effectCircle2{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background-color: rgb(42, 165, 155);
+    position: absolute;
+    left: 80%;
+    top: 4%;
+    box-shadow: 0px 0px 100px brown;
+    animation: second_circle 3s ease-in-out infinite alternate;
+} */
+
+/* @keyframes second_circle {
+0% {
+        box-shadow: 0px 0px 40px brown;
+    }
+
+    25% {
+        box-shadow: 0px 0px 50px rgb(57, 212, 26);
+    }
+
+    75% {
+        box-shadow: 0px 0px 60px rgb(162, 212, 26);
+    }
+
+    100% {
+        box-shadow: 0px 0px 70px rgb(136, 23, 206);
+    }
+
+    from {
+        position: absolute;
+        left: 80%;
+        top: 4%;
+    }
+
+    to {
+        position: absolute;
+        left: 78%;
+        top: 2%;
+    }
+}
+ */
